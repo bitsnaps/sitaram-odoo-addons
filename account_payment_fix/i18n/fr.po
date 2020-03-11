@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_fix
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190825\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-03 10:40+0000\n"
+"PO-Revision-Date: 2020-02-03 11:43+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__payment_method_ids
+msgid "Available payment methods"
+msgstr "Modes de paiement disponibles"
+
+#. module: account_payment_fix
+#: model:ir.ui.menu,name:account_payment_fix.menu_finance_bank_and_cash
+msgid "Bank and Cash"
+msgstr "Gestion des chèques"
+
+#. module: account_payment_fix
+#: selection:account.payment,state:0
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__destination_journal_ids
+msgid "Destination Journal"
+msgstr "Journal de destination"
+
+#. module: account_payment_fix
+#: selection:account.payment,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: account_payment_fix
+#: model:ir.model,name:account_payment_fix.model_account_invoice
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__journal_ids
+msgid "Journal"
+msgstr ""
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__amount
+msgid "Payment Amount"
+msgstr "Montant du paiement"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__journal_id
+msgid "Payment Journal"
+msgstr "Journal des Paiements"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__payment_method_description
+msgid "Payment Method"
+msgstr "Méthode de paiement"
+
+#. module: account_payment_fix
+#: model:ir.model,name:account_payment_fix.model_account_payment
+msgid "Payments"
+msgstr "Paiements"
+
+#. module: account_payment_fix
+#: selection:account.payment,state:0
+msgid "Posted"
+msgstr "Comptabilisé"
+
+#. module: account_payment_fix
+#: selection:account.payment,state:0
+msgid "Reconciled"
+msgstr "Lettré"
+
+#. module: account_payment_fix
+#: selection:account.payment,state:0
+msgid "Sent"
+msgstr "Envoyer par email"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__state
+msgid "Status"
+msgstr "État"
+
+#. module: account_payment_fix
+#: model:ir.model.fields,field_description:account_payment_fix.field_account_payment__destination_journal_id
+msgid "Transfer To"
+msgstr "Transférer à"
