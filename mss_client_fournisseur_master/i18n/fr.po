@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mss_client_fournisseur_master
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190825\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-25 18:45+0000\n"
+"PO-Revision-Date: 2020-02-25 19:49+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. module: mss_client_fournisseur_master
+#: model:ir.actions.act_window,name:mss_client_fournisseur_master.mss_view_customer_template_action
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.mss_menu_customer_template
+msgid "Clients"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.mss_menu_partner_template
+msgid "Clients/Fournisseurs"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model_terms:ir.actions.act_window,help:mss_client_fournisseur_master.mss_view_customer_template_action
+msgid "Create a new customer"
+msgstr "Créer un nouveau client"
+
+#. module: mss_client_fournisseur_master
+#: model_terms:ir.actions.act_window,help:mss_client_fournisseur_master.mss_view_supplier_template_action
+msgid "Create a new supplier"
+msgstr "Créer un nouveau fournisseur"
+
+#. module: mss_client_fournisseur_master
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.menu_action_account_payments_group_receivable
+msgid "Customer Receipts"
+msgstr "Paiements Clients"
+
+#. module: mss_client_fournisseur_master
+#: model:ir.actions.act_window,name:mss_client_fournisseur_master.action_account_invoice_due_customer_list2
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.menu_account_invoice_due_customer_list2
+msgid "Facts Clients en échéance"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model:ir.actions.act_window,name:mss_client_fournisseur_master.action_account_invoice_due_vendor_list2
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.menu_account_invoice_due_vendor_list2
+msgid "Facts Fournisseurs en échéance"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model:ir.actions.act_window,name:mss_client_fournisseur_master.mss_view_supplier_template_action
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.mss_menu_supplier_template
+msgid "Fournisseurs"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.menu_paiements_list2
+msgid "Paiements"
+msgstr ""
+
+#. module: mss_client_fournisseur_master
+#: model:ir.ui.menu,name:mss_client_fournisseur_master.menu_action_account_payments_group_payable
+msgid "Supplier Payments"
+msgstr "Paiements fournisseurs"
+
+#. module: mss_client_fournisseur_master
+#: model_terms:ir.actions.act_window,help:mss_client_fournisseur_master.mss_view_customer_template_action
+msgid ""
+"You must define a customer for everything you sell,\n"
+"                    whether it's a physical product, a consumable or services."
+msgstr ""
+"Vous devez définir un client pour tout ce que vous vendez,\n"
+"                    qu'il s'agisse d'un produit physique, d'un consommable ou de services."
+
+#. module: mss_client_fournisseur_master
+#: model_terms:ir.actions.act_window,help:mss_client_fournisseur_master.mss_view_supplier_template_action
+msgid ""
+"You must define a supplier for everything you purchase,\n"
+"                    whether it's a physical product, a consumable or services."
+msgstr ""
+"Vous devez définir un fournisseur pour tout ce que vous achetez,\n"
+"                    qu'il s'agisse d'un produit physique, d'un consommable ou de services."

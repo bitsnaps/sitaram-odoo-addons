@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="mss_view_customer_template_action" model="ir.actions.act_window">
+            <field name="name">Clients</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="base.view_partner_tree"/>
+            <field name="search_view_id" ref="base.view_res_partner_filter"/>
+            <field name="context">{"search_default_customer":1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new customer
+                </p>
+                <p>
+                    You must define a customer for everything you sell,
+                    whether it's a physical product, a consumable or services.
+                </p>
+            </field>
+        </record>
+        <record id="mss_view_supplier_template_action" model="ir.actions.act_window">
+            <field name="name">Fournisseurs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="base.view_partner_tree"/>
+            <field name="search_view_id" ref="base.view_res_partner_filter"/>
+            <field name="context">{'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_is_company': True}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new supplier
+                </p>
+                <p>
+                    You must define a supplier for everything you purchase,
+                    whether it's a physical product, a consumable or services.
+                </p>
+            </field>
+        </record>
+        <!--partner Menu-->
+        <menuitem id="mss_menu_partner_template" name="Clients/Fournisseurs" web_icon="mss_client_fournisseur_master,static/description/icon.png"
+                  sequence="1" action="mss_view_customer_template_action"/>
+        <menuitem id="mss_menu_customer_template" name="Clients" 
+                  parent="mss_menu_partner_template" 
+                  sequence="10" action="mss_view_customer_template_action"/>
+        <menuitem id="mss_menu_supplier_template" name="Fournisseurs" 
+                  parent="mss_menu_partner_template" 
+                  sequence="30" action="mss_view_supplier_template_action"/>  
+        <!--list customer due list menu et action--> 
+        <record id="action_account_invoice_due_customer_list2" model="ir.actions.act_window">
+        <field name="name">Facts Clients en échéance</field>
+        <field name="res_model">account.invoice.due.list</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="account_invoice_due_mac5.wizard_account_invoice_due_customer_list_form"/>
+        <field name="target">new</field>
+        <field name="context">{'invoice_type': 'out_invoice'}</field>
+        </record>          
+        <menuitem
+        id="menu_account_invoice_due_customer_list2"
+        action="action_account_invoice_due_customer_list2"
+        parent="mss_menu_partner_template"
+        sequence="20"/>
+        <!--list supplier due list menu et action--> 
+        <record id="action_account_invoice_due_vendor_list2" model="ir.actions.act_window">
+        <field name="name">Facts Fournisseurs en échéance</field>
+        <field name="res_model">account.invoice.due.list</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="account_invoice_due_mac5.wizard_account_invoice_due_vendor_list_form"/>
+        <field name="target">new</field>
+        <field name="context">{'invoice_type': 'in_invoice'}</field>
+    </record>
+
+    <menuitem
+        id="menu_account_invoice_due_vendor_list2"
+        action="action_account_invoice_due_vendor_list2"
+        parent="mss_menu_partner_template"
+        sequence="40"/> 
+    <menuitem
+        id="menu_paiements_list2"
+        name="Paiements"
+        parent="mss_menu_partner_template"
+        sequence="50"/>
+    <menuitem action="account_payment_group.action_account_payments_group" id="menu_action_account_payments_group_receivable" parent="menu_paiements_list2" sequence="10"/>
+    <menuitem action="account_payment_group.action_account_payments_group_payable" id="menu_action_account_payments_group_payable" parent="menu_paiements_list2" sequence="20"/>                                  
+    </data>
+</odoo>
