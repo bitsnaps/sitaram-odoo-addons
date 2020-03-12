@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button name="do_nothing" type="object" class="oe_stat_button" icon="fa-balance-scale" 
+                        attrs="{'invisible': [('credite', '=', 0)]}" context="{'default_partner_ids': [active_id]}">
+                        <div class="o_form_field o_stat_info">
+                            <span class="o_stat_value">
+                                <field name="credite" style="color: red;" attrs="{'invisible': [('credite', '&gt;=', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="credite" style="color: green;" attrs="{'invisible': [('credite', '&lt;', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>    
+                            </span>
+                            <span class="o_stat_text">Balance</span>
+                        </div>
+                    </button>
+                    <button name="do_nothing" type="object" class="oe_stat_button" icon="fa-balance-scale"
+                        attrs="{'invisible': [('debite', '=', 0)]}" context="{'default_partner_ids': [active_id]}">
+                        <div class="o_form_field o_stat_info">
+                            <span class="o_stat_value">
+                                 <field name="debite" style="color: red;" attrs="{'invisible': [('debite', '&gt;=', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="debite" style="color: green;" attrs="{'invisible': [('debite', '&lt;', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>       
+                            </span>
+                            <span class="o_stat_text">Balance</span>
+                        </div>
+                    </button>
+                    <button name="do_nothing" type="object"  class="oe_stat_button" icon="fa-balance-scale"
+                        attrs="{'invisible': ['|',('debite', '!=', 0),('credite', '!=', 0)]}" context="{'default_partner_ids': [active_id]}">
+                        <div class="o_form_field o_stat_info">
+                            <span class="o_stat_value">
+                                <field name="debite" style="color: red;" attrs="{'invisible': [('debite', '&gt;=', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="debite" style="color: green;" attrs="{'invisible': [('debite', '&lt;', 0)]}" widget='monetary' options="{'currency_field': 'currency_id'}"/>       
+                            </span>
+                            <span class="o_stat_text">Balance</span>
+                        </div>
+                    </button>
+                </div>
+        </field>
+    </record>
+</odoo>
