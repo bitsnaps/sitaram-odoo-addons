@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mss_product_sale_purchase_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190825\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-19 09:56+0000\n"
+"PO-Revision-Date: 2020-02-19 11:00+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model,name:mss_product_sale_purchase_history.model_product_product
+msgid "Product"
+msgstr "Article"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model,name:mss_product_sale_purchase_history.model_product_template
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_purchase_order_line__product_tmpl_id
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_sale_order_line__product_tmpl_id
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_product_product__purchase_line_ids
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_product_template__purchase_line_ids
+msgid "Purchase Lines"
+msgstr "Lignes de bons de commande  pour Achat"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model,name:mss_product_sale_purchase_history.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Ligne de commande d'achat"
+
+#. module: mss_product_sale_purchase_history
+#: model_terms:ir.ui.view,arch_db:mss_product_sale_purchase_history.mss_product_product_sale_purchase_history
+#: model_terms:ir.ui.view,arch_db:mss_product_sale_purchase_history.mss_product_template_sale_purchase_history
+msgid "Purchases History"
+msgstr "Historique D'achat"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_product_product__sale_line_ids
+#: model:ir.model.fields,field_description:mss_product_sale_purchase_history.field_product_template__sale_line_ids
+msgid "Sale Lines"
+msgstr "Lignes de bons de commande  pour Achat"
+
+#. module: mss_product_sale_purchase_history
+#: model_terms:ir.ui.view,arch_db:mss_product_sale_purchase_history.mss_product_product_sale_purchase_history
+#: model_terms:ir.ui.view,arch_db:mss_product_sale_purchase_history.mss_product_template_sale_purchase_history
+msgid "Sales History"
+msgstr "Historique de Vente"
+
+#. module: mss_product_sale_purchase_history
+#: model:ir.model,name:mss_product_sale_purchase_history.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande pour Vente"
